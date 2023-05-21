@@ -15,7 +15,7 @@ const mockTransacao = [
 ];
 
 describe('hooks/useListaTransacoes.js', () => {
-  test('Deve retornar uma lista de transações e uma função qque a atualiza', async () => {
+  test('Deve retornar uma lista de transações e uma função que a atualiza', async () => {
     buscaTransacoes.mockImplementation(() => mockTransacao);
 
     const { result } = renderHook(() => useListaTransacoes());
